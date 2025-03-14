@@ -57,7 +57,7 @@ const Contact = () => {
     { 
       name: 'Email',
       icon: <Mail className="h-5 w-5" />,
-      link: 'mailto:sukhrob.tokhirov006@gmail.com',
+      link: 'mailto:sukhrobtokhirov006@gmail.com',
     },
     { 
       name: 'Phone',
@@ -67,12 +67,12 @@ const Contact = () => {
     { 
       name: 'LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
-      link: 'https://linkedin.com/in/sukhrob-tokhirov',
+      link: 'https://linkedin.com/in/sukhrobtokhirov',
     },
     { 
       name: 'GitHub',
       icon: <Github className="h-5 w-5" />,
-      link: 'https://github.com/sukhrob-tokhirov',
+      link: 'https://github.com/stohirov',
     },
   ];
 
