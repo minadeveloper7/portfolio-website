@@ -25,9 +25,8 @@ const ApiPlayground: React.FC = () => {
       response: JSON.stringify({
         success: true,
         data: [
-          { id: 1, name: 'E-commerce API', tech: ['Node.js', 'Express', 'MongoDB'] },
-          { id: 2, name: 'Real-time Chat', tech: ['Socket.io', 'Redis', 'React'] },
-          { id: 3, name: 'Analytics Dashboard', tech: ['Python', 'FastAPI', 'PostgreSQL'] }
+          { id: 1, name: 'Online Education Platform', tech: ['Java', 'Spring', 'Spring Cloud', 'Liquibase', 'PostgreSQL'] },
+          { id: 2, name: 'Online Ticketing System', tech: ['Java', 'Spring', 'JWT', 'PostgreSQL', 'Docker', 'JUnit', 'Kafka'] },
         ]
       }, null, 2)
     },
@@ -38,12 +37,12 @@ const ApiPlayground: React.FC = () => {
       response: JSON.stringify({
         success: true,
         data: {
-          id: 1,
-          name: 'E-commerce API',
-          description: 'A scalable REST API for e-commerce applications',
-          tech: ['Node.js', 'Express', 'MongoDB'],
-          features: ['User authentication', 'Product catalog', 'Order management', 'Payment processing'],
-          github: 'https://github.com/johndoe/ecommerce-api'
+          id: 2,
+          name: 'Online Ticketing System',
+          description: 'The Mandulis Ticketing System is an open-source issue and ticket management platform built using Spring Boot and React. It offers key functionalities such as ticket creation, assignment, prioritization, and collaboration tools.',
+          tech: ['Java', 'Spring', 'JWT', 'PostgreSQL', 'Docker', 'JUnit', 'Kafka'],
+          features: ['User authentication', 'Ticket catalog', 'Order management', 'Payment processing'],
+          github: 'https://github.com/stohirov/mandulis-ticketing-system'
         }
       }, null, 2)
     },
