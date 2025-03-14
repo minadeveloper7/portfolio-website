@@ -26,16 +26,6 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: "1",
-      title: 'E-commerce API',
-      description: 'A robust RESTful API for e-commerce applications with authentication, product management, and order processing',
-      tech: ['Node.js', 'Express', 'MongoDB', 'JWT'],
-      category: 'api',
-      image: 'https://images.unsplash.com/photo-1667297953668-28fde2f76d45?q=80&w=500&auto=format&fit=crop',
-      github: 'https://github.com/yourusername/ecommerce-api',
-      icon: <Server className="h-6 w-6" />
-    },
-    {
-      id: "2",
       title: 'Online Education Platform',
       description: 'A full-stack application for online education with real-time updates',
       tech: ['Java', 'Spring', 'Spring Cloud', 'Liquibase', 'PostgreSQL'],
@@ -45,7 +35,7 @@ const Projects = () => {
       icon: <Globe className="h-6 w-6" />
     },
     {
-      id: "3",
+      id: "2",
       title: 'Online Ticketing System',
       description: 'The Mandulis Ticketing System is an open-source issue and ticket management platform built using Spring Boot and React. It offers key functionalities such as ticket creation, assignment, prioritization, and collaboration tools.',
       tech: ['Java', 'Spring', 'JWT', 'PostgreSQL', 'Docker', 'JUnit', 'Kafka'],
