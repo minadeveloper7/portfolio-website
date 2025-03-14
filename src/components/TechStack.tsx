@@ -20,51 +20,39 @@ const TechStack: React.FC = () => {
     {
       name: 'Backend',
       icon: <Server className="w-6 h-6" />,
-      skills: ['Node.js', 'Express', 'NestJS', 'Django', 'Flask', 'Spring Boot'],
+      skills: ['Java', 'PHP', 'Spring Boot', 'Spring Cloud', 'Express Backend'],
       color: 'bg-blue-500/20 text-blue-400 border-blue-500/50'
     },
     {
       name: 'Databases',
       icon: <Database className="w-6 h-6" />,
-      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'DynamoDB', 'Cassandra'],
+      skills: ['PostgreSQL', 'SQL', 'Liquibase', 'Database Migrations'],
       color: 'bg-green-500/20 text-green-400 border-green-500/50'
-    },
-    {
-      name: 'Cloud',
-      icon: <Cloud className="w-6 h-6" />,
-      skills: ['AWS', 'Google Cloud', 'Azure', 'Heroku', 'Vercel', 'Netlify'],
-      color: 'bg-purple-500/20 text-purple-400 border-purple-500/50'
     },
     {
       name: 'DevOps',
       icon: <Workflow className="w-6 h-6" />,
-      skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Jenkins', 'Terraform'],
+      skills: ['K8s', 'Grafana', 'Prometheus', 'Nginx', 'Docker'],
       color: 'bg-orange-500/20 text-orange-400 border-orange-500/50'
     },
     {
       name: 'Languages',
       icon: <Code className="w-6 h-6" />,
-      skills: ['TypeScript', 'JavaScript', 'Python', 'Go', 'Java', 'Rust'],
+      skills: ['Java', 'PHP', 'SQL', 'Go', 'JavaScript'],
       color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50'
     },
     {
       name: 'Architecture',
       icon: <Layers className="w-6 h-6" />,
-      skills: ['Microservices', 'Serverless', 'REST APIs', 'GraphQL', 'WebSockets', 'Event-driven'],
+      skills: ['Microservices', 'REST APIs', 'WhatsApp Cloud API', 'System Design'],
       color: 'bg-indigo-500/20 text-indigo-400 border-indigo-500/50'
     },
     {
-      name: 'Frontend',
+      name: 'Languages',
       icon: <Globe className="w-6 h-6" />,
-      skills: ['React', 'Vue', 'Svelte', 'Next.js', 'TailwindCSS', 'TypeScript'],
+      skills: ['English (Full Professional)', 'Russian (Full Professional)', 'Arabic (Limited Working)'],
       color: 'bg-pink-500/20 text-pink-400 border-pink-500/50'
-    },
-    {
-      name: 'Tooling',
-      icon: <GitBranch className="w-6 h-6" />,
-      skills: ['Git', 'npm/yarn', 'Webpack', 'Vite', 'Jest', 'Cypress'],
-      color: 'bg-red-500/20 text-red-400 border-red-500/50'
-    },
+    }
   ];
 
   const SkillBubble: React.FC<{ skill: string; index: number }> = ({ skill, index }) => (
@@ -86,7 +74,7 @@ const TechStack: React.FC = () => {
     <div className="w-full">
       <h2 className="text-2xl font-bold mb-8 text-center">Tech Stack</h2>
       
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
         {techCategories.map((category) => (
           <motion.button
             key={category.name}

@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Github, Linkedin, Mail, Check } from 'lucide-react';
+import { Send, Github, Linkedin, Mail, Phone, Check } from 'lucide-react';
 import { toast } from '@/components/ui/use-toast';
 
 interface FormData {
@@ -56,17 +57,22 @@ const Contact = () => {
     { 
       name: 'Email',
       icon: <Mail className="h-5 w-5" />,
-      link: 'mailto:john.doe@example.com',
+      link: 'mailto:sukhrob.tokhirov006@gmail.com',
     },
     { 
-      name: 'GitHub',
-      icon: <Github className="h-5 w-5" />,
-      link: 'https://github.com/johndoe',
+      name: 'Phone',
+      icon: <Phone className="h-5 w-5" />,
+      link: 'tel:+998990970700',
     },
     { 
       name: 'LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
-      link: 'https://linkedin.com/in/johndoe',
+      link: 'https://linkedin.com/in/sukhrob-tokhirov',
+    },
+    { 
+      name: 'GitHub',
+      icon: <Github className="h-5 w-5" />,
+      link: 'https://github.com/sukhrob-tokhirov',
     },
   ];
 
@@ -83,7 +89,7 @@ const Contact = () => {
         </div>
         <h1 className="text-4xl font-bold mb-6">Get in Touch</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Interested in working together? Feel free to reach out through the form below or via social media.
+          Interested in discussing backend development solutions? Feel free to reach out through the form below or via my contact information.
         </p>
       </motion.div>
 
@@ -184,7 +190,7 @@ const Contact = () => {
           <div className="glass rounded-lg p-8 border border-white/10 mb-6">
             <h2 className="text-2xl font-bold mb-6">Connect</h2>
             <p className="text-muted-foreground mb-8">
-              Feel free to reach out if you're looking for a backend developer, have a question, or just want to connect.
+              Feel free to reach out if you're looking for a backend developer specializing in Java, PHP, and SQL, or if you want to discuss backend architecture and solutions.
             </p>
             
             <div className="space-y-4">
@@ -210,22 +216,18 @@ const Contact = () => {
           </div>
           
           <div className="glass rounded-lg p-8 border border-white/10">
-            <h2 className="text-2xl font-bold mb-4">Office Hours</h2>
+            <h2 className="text-2xl font-bold mb-4">Location</h2>
             <p className="text-muted-foreground mb-4">
-              I typically respond to inquiries within 24 hours.
+              Based in Tashkent, Uzbekistan. Available for remote work and collaboration.
             </p>
             <div className="font-mono text-sm">
               <div className="flex justify-between py-2 border-b border-white/5">
                 <span>Monday - Friday</span>
-                <span>9:00 AM - 5:00 PM</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-white/5">
-                <span>Saturday</span>
-                <span>By appointment</span>
+                <span>9:00 AM - 6:00 PM (UZT)</span>
               </div>
               <div className="flex justify-between py-2">
-                <span>Sunday</span>
-                <span>Closed</span>
+                <span>Response Time</span>
+                <span>Usually within 24 hours</span>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import TechStack from '@/components/TechStack';
-import { Calendar, Code, User, Award } from 'lucide-react';
+import { Calendar, Code, User, Award, GraduationCap, Server } from 'lucide-react';
 
 interface TimelineItem {
   year: string;
@@ -24,46 +24,40 @@ const About = () => {
 
   const timelineData: TimelineItem[] = [
     {
-      year: '2018',
-      title: 'Started Coding Journey',
-      description: 'Began learning JavaScript and built my first web applications',
-      icon: <Code className="h-5 w-5" />
-    },
-    {
-      year: '2019',
-      title: 'Computer Science Degree',
-      description: 'Graduated with a degree in Computer Science, focusing on backend development',
-      icon: <Award className="h-5 w-5" />
-    },
-    {
-      year: '2020',
-      title: 'First Developer Role',
-      description: 'Joined a startup as a Backend Developer working with Node.js and MongoDB',
-      icon: <User className="h-5 w-5" />
-    },
-    {
       year: '2021',
-      title: 'Advanced to Senior Developer',
-      description: 'Promoted to Senior Backend Developer, leading architecture decisions',
-      icon: <Award className="h-5 w-5" />
+      title: 'PDP Academy',
+      description: 'Computer Software Engineering (November 2021 - September 2022)',
+      icon: <GraduationCap className="h-5 w-5" />
     },
     {
       year: '2022',
-      title: 'Microservices Migration',
-      description: 'Led a team to migrate monolithic architecture to microservices',
+      title: 'PDP IT University',
+      description: 'Started Bachelor of Computer Science degree, expected to graduate in July 2026',
+      icon: <GraduationCap className="h-5 w-5" />
+    },
+    {
+      year: '2022',
+      title: 'ECMA Software Development',
+      description: 'Java Backend Developer working with Spring Boot and microservices architecture',
+      icon: <Server className="h-5 w-5" />
+    },
+    {
+      year: '2024',
+      title: 'Pearson Certification',
+      description: 'Received BTEC International Level 3 Foundation Diploma in Information Technology',
+      icon: <Award className="h-5 w-5" />
+    },
+    {
+      year: '2024',
+      title: 'Kommo',
+      description: 'Backend Developer integrating WhatsApp Cloud API and working with K8s, Grafana, Prometheus, and Nginx',
       icon: <Code className="h-5 w-5" />
     },
     {
-      year: '2023',
-      title: 'Tech Lead',
-      description: 'Became Tech Lead for backend infrastructure, mentoring junior developers',
-      icon: <User className="h-5 w-5" />
-    },
-    {
       year: 'Present',
-      title: 'Freelance & Open Source',
-      description: 'Working on freelance projects and contributing to open source',
-      icon: <Calendar className="h-5 w-5" />
+      title: 'Continuous Growth',
+      description: 'Continuously improving my skills in Java, PHP, SQL, and cloud technologies',
+      icon: <User className="h-5 w-5" />
     }
   ];
 
@@ -101,7 +95,7 @@ const About = () => {
         </div>
         <h1 className="text-4xl font-bold mb-6">My Journey as a Developer</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          From curious beginner to experienced backend developer. Here's how I got here.
+          From dedicated student to experienced backend developer. Here's my professional path in Tashkent, Uzbekistan.
         </p>
       </motion.div>
 
@@ -159,10 +153,10 @@ const About = () => {
       >
         <h2 className="text-2xl font-bold mb-6">Beyond the Code</h2>
         <p className="text-muted-foreground mb-4">
-          When I'm not building backend systems or optimizing databases, you'll find me exploring the outdoors, reading about system design, or experimenting with new programming languages. I believe in continuous learning and solving real-world problems through elegant code.
+          As a Backend Developer at Kommo, I leverage my skills in Java, PHP, and Spring Cloud to create robust and scalable backend solutions. With over 1.5 years of experience in this role, I have previously worked as a Java Backend Developer at ECMA Software Development.
         </p>
         <p className="text-muted-foreground">
-          I'm passionate about creating software that's not only functional but also maintainable and scalable. My approach combines technical expertise with a focus on simplicity and user needs.
+          I'm currently pursuing a Bachelor of Science in Computer Science from PDP IT University, expected to graduate in July 2026. My passion for software engineering drives me to continuously learn new technologies and improve my coding skills. I am always eager to collaborate with other developers and contribute to the success of the team.
         </p>
       </motion.div>
     </div>

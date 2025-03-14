@@ -33,24 +33,24 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Backend Developer
+            Backend Developer @ Kommo
           </motion.div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-gradient">Building </span> 
+            <span className="text-gradient">Sukhrob </span> 
             <span className="relative">
-              robust
+              Tokhirov
               <motion.span 
                 className="absolute -bottom-2 left-0 h-1 bg-primary rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: '100%' }}
                 transition={{ delay: 0.8, duration: 0.6 }}
               />
-            </span> backends
+            </span>
           </h1>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-            Crafting scalable architectures and efficient APIs with precision and minimalist elegance.
+            Java, SQL, PHP developer crafting scalable backend architectures and efficient APIs with precision.
           </p>
           
           <Terminal initialCommand="whoami" />

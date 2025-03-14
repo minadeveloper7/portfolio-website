@@ -21,17 +21,18 @@ const Terminal: React.FC<TerminalProps> = ({ initialCommand = 'whoami' }) => {
   const terminalRef = useRef<HTMLDivElement>(null);
 
   const commands = {
-    whoami: "John Doe - Full Stack Developer specializing in backend technologies",
+    whoami: "Sukhrob Tokhirov - Backend Developer at Kommo, specializing in Java, SQL, PHP",
     skills: [
-      "TypeScript/JavaScript, Python, Go, Java",
-      "Node.js, Express, NestJS, Django, Flask",
-      "MongoDB, PostgreSQL, Redis, Elasticsearch",
-      "Docker, Kubernetes, AWS, GCP",
-      "CI/CD, Microservices, RESTful APIs, GraphQL"
+      "Java, PHP, Spring Boot, Spring Cloud",
+      "SQL, Liquibase, PostgreSQL",
+      "Go, Flyway",
+      "K8s, Grafana, Prometheus, Nginx",
+      "Microservices, RESTful APIs, WhatsApp Cloud API"
     ],
     projects: "Type 'projects' to view my portfolio",
-    help: "Available commands: whoami, skills, projects, contact, clear, help",
-    contact: "Email: john.doe@example.com\nGitHub: github.com/johndoe\nLinkedIn: linkedin.com/in/johndoe",
+    help: "Available commands: whoami, skills, projects, contact, education, clear, help",
+    contact: "Email: sukhrob.tokhirov006@gmail.com\nLinkedIn: linkedin.com/in/sukhrob-tokhirov\nPhone: +998990970700",
+    education: "PDP IT University: Bachelor of Science in Computer Science (2022-2026)\nPDP Academy: Computer Software Engineering (2021-2022)\nPearson BTEC International Level 3 Foundation Diploma in IT (2024)",
     clear: "Clearing terminal...",
     '*': "Command not found. Type 'help' for available commands."
   };
@@ -142,7 +143,7 @@ const Terminal: React.FC<TerminalProps> = ({ initialCommand = 'whoami' }) => {
           <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
           <div className="h-3 w-3 rounded-full bg-green-500"></div>
         </div>
-        <div className="text-xs text-gray-400">terminal@portfolio</div>
+        <div className="text-xs text-gray-400">terminal@sukhrob-portfolio</div>
         <div className="w-16"></div>
       </div>
       
