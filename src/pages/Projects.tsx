@@ -143,6 +143,10 @@ const Projects = () => {
                   style={{ 
                     transform: hoveredProject === project.id ? 'scale(1.05)' : 'scale(1)' 
                   }}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=500&auto=format&fit=crop';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
                 
