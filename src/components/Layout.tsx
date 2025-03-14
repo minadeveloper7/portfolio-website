@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </PageTransition>
       </main>
       <footer className="p-6 text-center text-sm text-muted-foreground">
-        <p>© {new Date().getFullYear()} | Designed & Developed with precision</p>
+        <p>© {new Date().getFullYear()} | Sukhrob Tokhirov</p>
       </footer>
     </div>
   );
