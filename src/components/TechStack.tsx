@@ -36,7 +36,7 @@ const TechStack: React.FC = () => {
       color: 'bg-orange-500/20 text-orange-400 border-orange-500/50'
     },
     {
-      name: 'Languages',
+      name: 'Programming',
       icon: <Code className="w-6 h-6" />,
       skills: ['Java', 'PHP', 'SQL', 'Go', 'JavaScript'],
       color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50'
@@ -48,7 +48,7 @@ const TechStack: React.FC = () => {
       color: 'bg-indigo-500/20 text-indigo-400 border-indigo-500/50'
     },
     {
-      name: 'Languages',
+      name: 'Human Languages',
       icon: <Globe className="w-6 h-6" />,
       skills: ['English (Full Professional)', 'Russian (Full Professional)', 'Arabic (Limited Working)'],
       color: 'bg-pink-500/20 text-pink-400 border-pink-500/50'

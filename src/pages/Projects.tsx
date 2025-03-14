@@ -8,11 +8,11 @@ import {
 } from 'lucide-react';
 
 interface Project {
-  id: number;
+  id: string | number;
   title: string;
   description: string;
   tech: string[];
-  category: 'api' | 'microservices' | 'database' | 'frontend';
+  category: 'api' | 'microservices' | 'database' | 'frontend' | 'education';
   image: string;
   github?: string;
   demo?: string;
@@ -21,70 +21,38 @@ interface Project {
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+  const [hoveredProject, setHoveredProject] = useState<string | number | null>(null);
 
   const projects: Project[] = [
     {
-      id: 1,
+      id: "1",
       title: 'E-commerce API',
-      description: 'A RESTful API for e-commerce applications with user authentication, product management, and order processing.',
+      description: 'A robust RESTful API for e-commerce applications with authentication, product management, and order processing',
       tech: ['Node.js', 'Express', 'MongoDB', 'JWT'],
       category: 'api',
       image: 'https://images.unsplash.com/photo-1667297953668-28fde2f76d45?q=80&w=500&auto=format&fit=crop',
-      github: 'https://github.com/johndoe/ecommerce-api',
+      github: 'https://github.com/yourusername/ecommerce-api',
       icon: <Server className="h-6 w-6" />
     },
     {
-      id: 2,
-      title: 'Real-time Chat Microservice',
-      description: 'A scalable chat service using WebSockets and Redis pub/sub for real-time messaging applications.',
-      tech: ['WebSockets', 'Redis', 'Node.js', 'Docker'],
-      category: 'microservices',
+      id: "2",
+      title: 'Online Education Platform',
+      description: 'A full-stack application for online education with real-time updates',
+      tech: ['Java', 'Spring', 'Spring Cloud', 'Liquibase', 'PostgreSQL'],
+      category: 'education',
       image: 'https://images.unsplash.com/photo-1494059980473-813e73ee784b?q=80&w=500&auto=format&fit=crop',
-      github: 'https://github.com/johndoe/chat-microservice',
-      demo: 'https://chat-demo.example.com',
-      icon: <RefreshCw className="h-6 w-6" />
-    },
-    {
-      id: 3,
-      title: 'Database Migration Tool',
-      description: 'A tool for seamless migrations between different database systems with data validation and transformation.',
-      tech: ['Python', 'PostgreSQL', 'MongoDB', 'SQLAlchemy'],
-      category: 'database',
-      image: 'https://images.unsplash.com/photo-1654277061535-5161b3e28ad0?q=80&w=500&auto=format&fit=crop',
-      github: 'https://github.com/johndoe/db-migration-tool',
-      icon: <Database className="h-6 w-6" />
-    },
-    {
-      id: 4,
-      title: 'Authentication Microservice',
-      description: 'A secure authentication service supporting OAuth, JWT, and multi-factor authentication.',
-      tech: ['Node.js', 'Express', 'JWT', 'OAuth'],
-      category: 'microservices',
-      image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=500&auto=format&fit=crop',
-      github: 'https://github.com/johndoe/auth-service',
-      icon: <Lock className="h-6 w-6" />
-    },
-    {
-      id: 5,
-      title: 'Content Delivery API',
-      description: 'A high-performance API for content delivery with caching and image optimization.',
-      tech: ['Go', 'Redis', 'AWS S3', 'Docker'],
-      category: 'api',
-      image: 'https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=500&auto=format&fit=crop',
-      github: 'https://github.com/johndoe/content-api',
-      icon: <Cloud className="h-6 w-6" />
-    },
-    {
-      id: 6,
-      title: 'Developer Portfolio Site',
-      description: 'A minimalist developer portfolio showcasing backend development skills with interactive elements.',
-      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      category: 'frontend',
-      image: 'https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=500&auto=format&fit=crop',
-      github: 'https://github.com/johndoe/portfolio',
-      demo: 'https://johndoe.dev',
+      demo: 'https://online.pdp.uz',
       icon: <Globe className="h-6 w-6" />
+    },
+    {
+      id: "3",
+      title: 'Online Ticketing System',
+      description: 'The Mandulis Ticketing System is an open-source issue and ticket management platform built using Spring Boot and React. It offers key functionalities such as ticket creation, assignment, prioritization, and collaboration tools.',
+      tech: ['Java', 'Spring', 'JWT', 'PostgreSQL', 'Docker', 'JUnit', 'Kafka'],
+      category: 'microservices',
+      image: 'https://images.unsplash.com/photo-1654277061535-5161b3e28ad0?q=80&w=500&auto=format&fit=crop',
+      github: 'https://github.com/stohirov/mandulis-ticketing-system',
+      icon: <Database className="h-6 w-6" />
     }
   ];
 
@@ -96,7 +64,7 @@ const Projects = () => {
     { id: 'api', label: 'APIs', icon: <Server className="h-4 w-4" /> },
     { id: 'microservices', label: 'Microservices', icon: <RefreshCw className="h-4 w-4" /> },
     { id: 'database', label: 'Database', icon: <Database className="h-4 w-4" /> },
-    { id: 'frontend', label: 'Frontend', icon: <Globe className="h-4 w-4" /> }
+    { id: 'education', label: 'Education', icon: <Globe className="h-4 w-4" /> }
   ];
 
   return (
