@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import TechStack from '@/components/TechStack';
 import { Calendar, Code, User, Award } from 'lucide-react';
@@ -67,7 +67,7 @@ const About = () => {
     }
   ];
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -77,7 +77,7 @@ const About = () => {
     }
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
@@ -115,7 +115,7 @@ const About = () => {
       >
         <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-primary/30 to-transparent"></div>
         
-        {timelineData.map((item, index) => (
+        {timelineData.map((timelineItem, index) => (
           <motion.div 
             key={index}
             variants={item}
@@ -125,15 +125,15 @@ const About = () => {
           >
             <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-12' : 'md:pr-12 md:text-right'}`}>
               <div className="glass p-6 rounded-lg border border-white/10 h-full">
-                <div className="text-primary font-mono font-bold mb-2">{item.year}</div>
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
+                <div className="text-primary font-mono font-bold mb-2">{timelineItem.year}</div>
+                <h3 className="text-xl font-bold mb-2">{timelineItem.title}</h3>
+                <p className="text-muted-foreground">{timelineItem.description}</p>
               </div>
             </div>
             
             <div className="absolute left-0 md:left-1/2 w-16 h-16 bg-secondary rounded-full flex items-center justify-center border-4 border-background transform -translate-y-1/2 md:-translate-x-1/2">
               <div className="bg-primary/10 p-2 rounded-full">
-                {item.icon}
+                {timelineItem.icon}
               </div>
             </div>
           </motion.div>

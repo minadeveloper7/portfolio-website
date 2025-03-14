@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, GitHub, Linkedin, Mail, Check } from 'lucide-react';
+import { Send, Github, Linkedin, Mail, Check } from 'lucide-react';
 import { toast } from '@/components/ui/use-toast';
 
 interface FormData {
@@ -61,7 +60,7 @@ const Contact = () => {
     },
     { 
       name: 'GitHub',
-      icon: <GitHub className="h-5 w-5" />,
+      icon: <Github className="h-5 w-5" />,
       link: 'https://github.com/johndoe',
     },
     { 
