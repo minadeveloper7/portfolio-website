@@ -20,19 +20,19 @@ const TechStack: React.FC = () => {
     {
       name: 'Backend',
       icon: <Server className="w-6 h-6" />,
-      skills: ['Java', 'PHP', 'Spring Boot', 'Spring Cloud', 'Express Backend'],
+      skills: ['Java', 'PHP', 'Spring Framework', 'Symfony', 'Quarkus', 'High-load projects'],
       color: 'bg-blue-500/20 text-blue-400 border-blue-500/50'
     },
     {
       name: 'Databases',
       icon: <Database className="w-6 h-6" />,
-      skills: ['PostgreSQL', 'SQL', 'Liquibase', 'Database Migrations'],
+      skills: ['PostgreSQL', 'SQL', 'Liquibase', 'Database Migrations', 'MySQL', 'H2', 'Redis', 'MongoDB'],
       color: 'bg-green-500/20 text-green-400 border-green-500/50'
     },
     {
       name: 'DevOps',
       icon: <Workflow className="w-6 h-6" />,
-      skills: ['K8s', 'Grafana', 'Prometheus', 'Nginx', 'Docker'],
+      skills: ['K8s', 'Grafana', 'Prometheus', 'Nginx', 'Docker', 'Apache Kafka'],
       color: 'bg-orange-500/20 text-orange-400 border-orange-500/50'
     },
     {
@@ -44,7 +44,7 @@ const TechStack: React.FC = () => {
     {
       name: 'Architecture',
       icon: <Layers className="w-6 h-6" />,
-      skills: ['Microservices', 'REST APIs', 'WhatsApp Cloud API', 'System Design'],
+      skills: ['Microservices', 'REST APIs', 'System Design', 'Load Balancer'],
       color: 'bg-indigo-500/20 text-indigo-400 border-indigo-500/50'
     },
     {
