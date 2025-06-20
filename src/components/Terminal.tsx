@@ -21,13 +21,13 @@ const Terminal: React.FC<TerminalProps> = ({ initialCommand = 'whoami' }) => {
   const terminalRef = useRef<HTMLDivElement>(null);
 
   const commands = {
-    whoami: "Sukhrob Tokhirov - Backend Developer at Kommo, specializing in Java, SQL, PHP",
+    whoami: "Sukhrob Tokhirov - Backend Developer at StreetPark Systems, specializing in Java, SQL, PHP",
     skills: [
       "Java, PHP, Spring Boot, Spring Cloud",
       "SQL, Liquibase, PostgreSQL",
       "Go, Flyway",
       "K8s, Grafana, Prometheus, Nginx",
-      "Microservices, RESTful APIs, WhatsApp Cloud API"
+      "Microservices, RESTful APIs"
     ],
     projects: "Type 'projects' to view my portfolio",
     help: "Available commands: whoami, skills, projects, contact, education, clear, help",
