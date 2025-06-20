@@ -54,6 +54,12 @@ const About = () => {
       icon: <Code className="h-5 w-5" />
     },
     {
+      year: '2025',
+      title: 'StreetPark Systems',
+      description: 'Java Software Engineer working with Kibana, Grafana, ElasticSearch, Apache Kafka, Spring Microservices',
+      icon: <Code className="h-5 w-5" />
+    },
+    {
       year: 'Present',
       title: 'Continuous Growth',
       description: 'Continuously improving my skills in Java, PHP, SQL, and cloud technologies',
@@ -153,7 +159,7 @@ const About = () => {
       >
         <h2 className="text-2xl font-bold mb-6">Beyond the Code</h2>
         <p className="text-muted-foreground mb-4">
-          As a Backend Developer at Kommo, I leverage my skills in Java, PHP, and Spring Cloud to create robust and scalable backend solutions. With over 1.5 years of experience in this role, I have previously worked as a Java Backend Developer at ECMA Software Development.
+          As a Backend Developer at StreetPark Systems, I leverage my skills in Java, PHP, and Spring Cloud to create robust and scalable backend solutions. With over 2.5 years of experience in this role, I have previously worked as a Java Backend Developer at ECMA Software Development and Backend Developer at Kommo.
         </p>
         <p className="text-muted-foreground">
           I'm currently pursuing a Bachelor of Science in Computer Science from PDP IT University, expected to graduate in July 2026. My passion for software engineering drives me to continuously learn new technologies and improve my coding skills. I am always eager to collaborate with other developers and contribute to the success of the team.
