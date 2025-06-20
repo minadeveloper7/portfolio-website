@@ -33,7 +33,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Backend Developer @ Kommo
+            Backend Developer @ StreetPark Systems
           </motion.div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
